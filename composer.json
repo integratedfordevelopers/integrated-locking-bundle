@@ -1,20 +1,14 @@
 {
     "name": "integrated/locking-bundle",
     "type": "symfony-bundle",
-    "description": "Integrated Locking Bundle",
+    "description": "Provides an interface to manage database locks and keep a lock active by Ajax request",
     "keywords": ["Integrated", "locking"],
-    "homepage": "http://www.e-active.nl",
+    "homepage": "http://www.integratedfordevelopers.com",
     "license": "MIT",
     "authors": [
         {
             "name": "e-Active",
             "homepage": "http://www.e-active.nl"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:eactive/integrated-library.git"
         }
     ],
     "minimum-stability": "dev",
@@ -25,18 +19,15 @@
         "symfony/framework-bundle": "~2.2",
         "integrated/library": "~0.1"
     },
-	"require-dev": {
-		"doctrine/dbal": ">=2.3.0,<2.5-dev"
-	},
+    "require-dev": {
+        "doctrine/dbal": ">=2.3.0,<2.5-dev",
+        "squizlabs/php_codesniffer": "2.*",
+        "phpunit/phpunit": "~4.8"
+    },
     "autoload":{
         "psr-0":{
             "Integrated\\Bundle\\LockingBundle": ""
         }
     },
-    "target-dir": "Integrated/Bundle/LockingBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "0.1.x-dev"
-        }
-    }
+    "target-dir": "Integrated/Bundle/LockingBundle"
 }
